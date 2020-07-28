@@ -1,0 +1,23 @@
+.contacts {
+  background-color: $basic_grey;
+}
+
+.contacts__wrapper {
+  @include wrapper;
+}
+
+.contacts__title {
+  margin: 0;
+  color: $special_black;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @include font (16px, 18px);
+}
+
+.contacts__address {
+  font-family: $arial;
+  font-style: normal;
+
+  @include font(14px, 20px);
+}

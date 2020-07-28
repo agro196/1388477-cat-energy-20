@@ -1,0 +1,11 @@
+.promo {
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-size: cover;
+}
+
+.promo__text {
+  margin: 0;
+  font-family: $arial;
+
+  @include font(16px, 20px);
+}

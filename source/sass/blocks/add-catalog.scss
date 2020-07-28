@@ -1,0 +1,17 @@
+.add-catalog__wrapper {
+  @include wrapper;
+}
+
+.add-catalog__title {
+  margin: 0;
+
+  @include font(24px, 24px);
+  color: $basic_black;
+  font-weight: 400;
+}
+
+.add-catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
