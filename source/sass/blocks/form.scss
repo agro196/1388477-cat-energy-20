@@ -1,0 +1,16 @@
+.form__submit-button {
+  @include button;
+  @include font(16px, 20px);
+  width: 100%;
+  font-family: $oswald;
+  border: none;
+}
+
+.form__small-text {
+  display: block;
+  text-align: center;
+  font-family: $arial;
+  color: $basic-black;
+
+  @include font(14px, 16px);
+}

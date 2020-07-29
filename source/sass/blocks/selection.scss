@@ -1,0 +1,16 @@
+.selection__title {
+  margin: 0;
+
+  @include font(36px, 36px);
+  color: $basic_black;
+  font-weight: 400;
+}
+
+.selection__subtitle {
+  margin: 0;
+
+  @include font(14px, 18px);
+  color: $basic_black;
+  font-weight: 400;
+  text-transform: uppercase;
+}

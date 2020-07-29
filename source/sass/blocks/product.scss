@@ -1,0 +1,40 @@
+.product {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product__title {
+  @include font(16px, 20px);
+
+  font-weight: 400;
+  color: $product_color;
+  text-transform: uppercase;
+  max-width: 100px;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.product__info-block {
+  flex-grow: 1;
+}
+
+.product__info {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 22px;
+  list-style: none;
+  font-family: $arial;
+
+  @include font(12px, 16px);
+}
+
+.product__info-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__link {
+  @include button;
+  @include font(16px, 16px);
+  width: 100%;
+}

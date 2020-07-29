@@ -1,0 +1,22 @@
+.add-fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.add-fieldset__legend {
+  @include font(24px, 26px);
+  color: $basic_black;
+}
+
+.add-fieldset__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.add-fieldset__label {
+  @include font(16px, 18px);
+  text-transform: uppercase;
+  color: $basic_black;
+}

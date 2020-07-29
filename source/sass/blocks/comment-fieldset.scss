@@ -1,0 +1,23 @@
+.comment-fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.comment-fieldset__legend {
+  @include font(24px, 26px);
+  color: $basic_black;
+}
+
+.comment-fieldset__textarea {
+  width: 100%;
+  resize: none;
+
+  @include font(16px, 18px);
+  text-transform: uppercase;
+  font-family: $oswald;
+  color: $special_dark-grey;
+  padding-left: 15px;
+  padding-top: 13px;
+  border: 1px solid $input_grey;
+}

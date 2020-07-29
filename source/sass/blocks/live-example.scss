@@ -1,0 +1,46 @@
+.live-example {
+  background-color: $dark-grey;
+}
+
+.live-example__wrapper {
+  @include wrapper;
+}
+
+.live-example__title {
+  margin: 0;
+  font-weight: 400;
+  color: $basic-black;
+
+  @include font(36px, 40px);
+}
+
+.live-example__desc {
+  margin: 0;
+  font-family: $arial;
+}
+
+.live-example__stats-value {
+  color: $basic-black;
+  text-transform: uppercase;
+
+  @include font(24px, 24px);
+}
+
+.live-example__stats-mark {
+  color: $basic-black;
+  font-family: $arial;
+
+  @include font(12px, 12px);
+}
+
+.live-example__cost-mark {
+  @include font(14px, 20px);
+  color: $basic-black;
+  text-transform: uppercase;
+}
+
+.live-example__cost-value {
+  @include font(14px, 20px);
+  color: $basic-black;
+  text-transform: uppercase;
+}

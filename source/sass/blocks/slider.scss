@@ -1,0 +1,10 @@
+.slider__button {
+  padding: 0;
+  color: $basic-black;
+  font-family: $oswald;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+
+  @include font(16px, 20px);
+}

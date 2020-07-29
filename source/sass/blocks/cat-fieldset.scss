@@ -1,0 +1,30 @@
+.cat-fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.cat-fieldset__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cat-fieldset__label {
+  @include font(16px, 18px);
+  text-transform: uppercase;
+}
+
+.cat-fieldset__input {
+  padding: 10px 0 10px 14px;
+
+  @include font(16px, 18px);
+  text-transform: uppercase;
+  color: $special_dark-grey;
+  border: 1px solid $input_grey;
+
+  &::placeholder {
+    color: $special_dark-grey;
+    font-family: $oswald;
+  }
+}

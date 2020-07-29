@@ -1,0 +1,20 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-list__item {
+  text-align: center;
+  border-top: 1px solid $light_grey;
+  border-bottom: 1px solid $light_grey;
+  padding: 24px 0;
+}
+
+.site-list__item-link {
+  color: $basic-black;
+
+  @include font(20px, 20px);
+  font-weight: 500;
+  text-transform: uppercase;
+}

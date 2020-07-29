@@ -1,0 +1,30 @@
+.program-offer {
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.program-offer__wrapper {
+  @include wrapper;
+}
+
+.program-offer__title {
+  margin: 0;
+  text-align: center;
+
+  @include font(36px, 36px);
+  color: $basic-white;
+  font-weight: normal;
+}
+
+.program-offer__motivation {
+  margin: 0;
+  color: $basic-white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.program-offer__link {
+  @include button;
+  @include font(14px, 18px);
+}

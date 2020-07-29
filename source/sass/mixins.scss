@@ -1,0 +1,27 @@
+@mixin font($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin wrapper($padding-left: 20px, $padding-right: 20px) {
+  padding-left: $padding-left;
+  padding-right: $padding-right;
+}
+
+@mixin button {
+  text-transform: uppercase;
+  color: $basic-white;
+  background-color: $basic-green;
+  padding: 10px 0;
+  display: block;
+  text-align: center;
+}
+
+@mixin button--show-all {
+  text-transform: uppercase;
+  color: $special_dark-grey;
+  background-color: $basic_grey;
+  padding: 10px 0;
+  display: block;
+  text-align: center;
+}

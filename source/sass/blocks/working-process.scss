@@ -1,0 +1,22 @@
+.working-process__wrapper {
+  @include wrapper;
+}
+
+.working-process__title {
+  margin: 0;
+  color: $basic-black;
+
+  @include font(36px, 40px);
+  font-weight: 400;
+}
+
+.working-process__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.working-process__item-text {
+  margin: 0;
+  font-family: $arial;
+}
