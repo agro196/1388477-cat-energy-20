@@ -1,7 +1,8 @@
 .weight-fieldset {
   margin: 0;
   padding: 0;
-  border: none;
+  border-top: 1px solid $special_grey-4;
+  border-bottom: 1px solid $special_grey-4;
 }
 
 .weight-fieldset__list {

@@ -7,6 +7,9 @@
 .add-fieldset__legend {
   @include font(24px, 26px);
   color: $basic_black;
+  margin: 0;
+  margin-bottom: 34px;
+  font-weight: normal;
 }
 
 .add-fieldset__list {

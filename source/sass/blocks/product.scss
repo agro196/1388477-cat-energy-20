@@ -1,6 +1,9 @@
 .product {
   display: flex;
   flex-wrap: wrap;
+  border-top: 1px solid $special_grey-2;
+  border-bottom: 1px solid $special_grey-2;
+  padding: 25px 20px 25px 20px;
 }
 
 .product__title {
@@ -12,6 +15,10 @@
   max-width: 100px;
   margin: 0;
   margin-bottom: 18px;
+}
+
+.product__title-link {
+  color: $product_color;
 }
 
 .product__info-block {

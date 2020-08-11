@@ -10,13 +10,24 @@
   list-style: none;
 }
 
+.cat-fieldset__item {
+  display: flex;
+  align-items: center;
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+
 .cat-fieldset__label {
   @include font(16px, 18px);
   text-transform: uppercase;
+  flex-shrink: 0;
+  margin-right: 14px;
 }
 
 .cat-fieldset__input {
   padding: 10px 0 10px 14px;
+  width: 100%;
 
   @include font(16px, 18px);
   text-transform: uppercase;

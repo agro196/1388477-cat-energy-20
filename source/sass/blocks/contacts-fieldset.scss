@@ -1,12 +1,14 @@
 .contacts-fieldset {
   margin: 0;
-  padding: 0;
   border: none;
 }
 
 .contacts-fieldset__legend {
   @include font(24px, 26px);
   color: $basic_black;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 32px;
 }
 
 .contacts-fieldset__list {
@@ -15,9 +17,19 @@
   list-style: none;
 }
 
+.contacts-fieldset__item {
+  display: flex;
+  align-items: center;
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+
 .contacts-fieldset__label {
   @include font(16px, 18px);
   text-transform: uppercase;
+  flex-shrink: 0;
+  margin-right: 14px;
 }
 
 .contacts-fieldset__input {

@@ -4,6 +4,8 @@
 
 .add-catalog__title {
   margin: 0;
+  margin-top: 28px;
+  margin-bottom: 35px;
 
   @include font(24px, 24px);
   color: $basic_black;
