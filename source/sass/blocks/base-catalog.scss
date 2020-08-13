@@ -1,8 +1,17 @@
+.base-catalog__wrapper {
+  @include wrapper;
+}
+
 .base-catalog__title {
   @include font(36px, 36px);
   @include wrapper;
   font-weight: 400;
   color: $basic_black;
+  border-bottom: 1px solid $special_grey-2;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 40px;
+  margin: 0 -20px;
 }
 
 .base-catalog__list {
@@ -11,3 +20,7 @@
   list-style: none;
 }
 
+.base-catalog__item {
+  border-bottom: 1px solid $special_grey-2;
+  margin: 0 -20px;
+}

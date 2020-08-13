@@ -1,3 +1,7 @@
+.selection__wrapper {
+  @include wrapper;
+}
+
 .selection__title {
   margin: 0;
   margin-top: 25px;

@@ -1,0 +1,5 @@
+.checkbox-field__label {
+  @include font(16px, 18px);
+  text-transform: uppercase;
+  color: $special_dark-grey;
+}
