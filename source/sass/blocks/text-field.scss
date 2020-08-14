@@ -1,0 +1,31 @@
+.text-field {
+  display: flex;
+  align-items: center;
+}
+
+.text-field__label {
+  @include font(16px, 18px);
+  text-transform: uppercase;
+  flex-shrink: 0;
+  margin-right: 14px;
+}
+
+.text-field__input {
+  padding: 13px 15px;
+  width: 100%;
+
+  @include font(16px, 18px);
+  text-transform: uppercase;
+  color: $special_dark-grey;
+  border: 1px solid $input_grey;
+  &::placeholder {
+    color: $special_dark-grey;
+    font-family: $oswald;
+  }
+}
+
+.text-field__input--comment {
+  resize: none;
+  font-family: $oswald;
+  padding-right: 12px;
+}

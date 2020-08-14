@@ -1,7 +1,8 @@
 .program-offer {
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 305px;
+  padding-top: 27px;
 }
 
 .program-offer__wrapper {
@@ -19,9 +20,15 @@
 
 .program-offer__motivation {
   margin: 0;
+  padding-top: 25px;
   color: $basic-white;
   text-transform: uppercase;
   text-align: center;
+}
+
+.program-offer__img {
+  display: block;
+  margin:23px auto 3px auto;
 }
 
 .program-offer__link {

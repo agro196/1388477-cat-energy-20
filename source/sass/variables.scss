@@ -5,6 +5,7 @@ $special_black:#111111;
 $basic_green: #68b738;
 $basic_grey: #f2f2f2;
 $light_grey: #e6e6e6;
+$special_grey-4: #d9d9d9;
 $special_grey-2: #ebebeb;
 $special_grey: #cdcdcd;
 $dark-grey: #eaeaea;
@@ -18,3 +19,7 @@ $product_color: #222222;
 // fonts
 $oswald: "Oswald", arial, sans-serif;
 $arial: arial, sans-serif;
+// breakpoints
+$tablet-width: 768px;
+$desktop-width: 1220px;
+$mobile-width-only: 767px;

@@ -1,9 +1,9 @@
-.contacts {
-  background-color: $basic_grey;
-}
-
 .contacts__wrapper {
   @include wrapper;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 22px;
 }
 
 .contacts__title {
@@ -11,8 +11,9 @@
   color: $special_black;
   font-weight: 400;
   text-transform: uppercase;
+  margin-right: 17px;
 
-  @include font (16px, 18px);
+  @include font (16px, 20px);
 }
 
 .contacts__address {

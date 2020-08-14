@@ -5,3 +5,14 @@
 .page-footer__wrapper {
   @include wrapper;
 }
+
+.page-footer__logo {
+  display: block;
+  padding-top: 39px;
+  padding-bottom: 32px;
+}
+
+.page-footer__logo-img {
+  display: block;
+  margin: 0 auto;
+}

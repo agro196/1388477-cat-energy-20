@@ -1,9 +1,51 @@
+.form__wrapper {
+  @include wrapper;
+  overflow: hidden;
+}
+
+.form__fieldset {
+  margin-bottom: 27px;
+}
+
+.form__fieldset--weight {
+  border-top: 1px solid $special_grey-4;
+  border-bottom: 1px solid $special_grey-4;
+  padding: 20px 20px;
+  margin: 0 -20px;
+  margin-bottom: 27px;
+}
+
+
+.form__fieldset-title {
+  @include font(24px, 26px);
+  color: $basic_black;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 32px;
+
+  @include title-line;
+}
+
+.form__fieldset-title--contacts {
+  max-width: 205px;
+}
+.form__fieldset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form__fieldset-item + .form__fieldset-item {
+  margin-top: 13px;
+}
+
 .form__submit-button {
   @include button;
   @include font(16px, 20px);
   width: 100%;
   font-family: $oswald;
   border: none;
+  margin-bottom: 21px;
 }
 
 .form__small-text {

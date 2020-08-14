@@ -1,0 +1,5 @@
+.radio-field__label {
+  @include font(16px, 18px);
+  text-transform: uppercase;
+  color: $product_color;
+}

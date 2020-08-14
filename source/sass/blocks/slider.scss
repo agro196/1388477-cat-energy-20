@@ -8,3 +8,37 @@
 
   @include font(16px, 20px);
 }
+
+.slider__slider-image {
+  margin: 0 -20px;
+}
+
+.slider__image-before {
+  display: block;
+  margin: 0 auto;
+}
+
+.slider__slider-controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.slider__toggle-scale {
+  width: 84px;
+  height: 14px;
+  background-color: $basic_white;
+  border-radius: 6px;
+  border: 1px solid $special_grey;
+  &::after {
+    content: '';
+    width: 35px;
+    height: 6px;
+    background-color: $basic_green;
+    display: block;
+    border-radius: 6px;
+    margin-left: 6px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+}

@@ -6,13 +6,26 @@
 @mixin wrapper($padding-left: 20px, $padding-right: 20px) {
   padding-left: $padding-left;
   padding-right: $padding-right;
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-left: 55px;
+    padding-right: 55px;
+    max-width: 1220px;
+    margin: 0 auto;
+
+  }
 }
+
 
 @mixin button {
   text-transform: uppercase;
   color: $basic-white;
   background-color: $basic-green;
-  padding: 10px 0;
+  padding-top: 12px;
+  padding-bottom: 10px;
   display: block;
   text-align: center;
 }
@@ -24,4 +37,20 @@
   padding: 10px 0;
   display: block;
   text-align: center;
+}
+@mixin title-line {
+  padding-right: 22px;
+  display: inline-block;
+  position: relative;
+  background-color: $basic_white;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 2px;
+    margin-top: calc(1em/2 + 2px);
+    background-color: $basic_green;
+    z-index: -1;
+  }
 }

@@ -1,17 +1,33 @@
+.add-catalog {
+  overflow: hidden;
+}
+
 .add-catalog__wrapper {
   @include wrapper;
 }
 
+.add-catalog__title-block {
+  border-bottom: 1px solid $special_grey
+}
+
 .add-catalog__title {
   margin: 0;
+  margin-top: 28px;
+  margin-bottom: 35px;
 
   @include font(24px, 24px);
   color: $basic_black;
   font-weight: 400;
+
+  @include title-line;
 }
 
 .add-catalog__list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.add-catalog__item {
+  border-bottom: 1px solid $special_grey;
 }

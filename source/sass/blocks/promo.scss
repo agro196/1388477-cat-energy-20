@@ -1,11 +1,27 @@
 .promo {
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
   background-size: cover;
+  padding-top: 186px;
+  padding-bottom: 43px;
 }
 
 .promo__text {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0px 50px;
   font-family: $arial;
+  color: $basic_white;
+  &::before {
+    content: "";
+    margin-bottom: 38px;
+    background-image: url("../../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    width: 78px;
+    height: 80px;
+  }
 
   @include font(16px, 20px);
 }
