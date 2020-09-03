@@ -1,5 +1,5 @@
 .program-offer {
-  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100% 305px;
   padding-top: 27px;
@@ -13,7 +13,7 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 275px;
-    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-image: url("../img/index-background-desktop@1x.jpg");
     background-size: 720px 696px;
     background-position: right top;
     max-width: 1440px;
