@@ -3,35 +3,104 @@
   background-repeat: no-repeat;
   background-size: 100% 305px;
   padding-top: 27px;
+  position: relative;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    padding-bottom: 530px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 275px;
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-size: 720px 696px;
+    background-position: right top;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: -73px;
+    z-index: -1;
+  }
 }
 
 .program-offer__wrapper {
   @include wrapper;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 190px;
+  }
 }
 
 .program-offer__title {
   margin: 0;
+  margin-bottom: 25px;
   text-align: center;
 
   @include font(36px, 36px);
   color: $basic-white;
   font-weight: normal;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $basic_black;
+    text-align: left;
+    max-width: 450px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 111px;
+  }
 }
 
 .program-offer__motivation {
   margin: 0;
-  padding-top: 25px;
+  padding: 0;
   color: $basic-white;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    color: $basic_black;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 49px;
+  }
 }
 
 .program-offer__img {
   display: block;
-  margin:23px auto 3px auto;
+  margin: 23px auto 3px auto;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+    right: 20%;
+  }
 }
 
 .program-offer__link {
   @include button;
   @include font(14px, 18px);
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    max-width: 244px;
+    padding: 17px 0;
+  }
 }

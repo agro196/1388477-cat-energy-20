@@ -1,5 +1,45 @@
 .radio-field__label {
   @include font(16px, 18px);
   text-transform: uppercase;
+  position: relative;
   color: $product_color;
+  padding-left: 48px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  display: block;
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 1px solid $special_grey;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 3px;
+    padding: 8px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 4px;
+    padding-bottom: 0;
+    padding-left: 63px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+      padding: 10px;
+    }
+  }
+}
+
+.radio-field__input {
+  display: none;
+}
+
+.radio-field__input:checked + .radio-field__label::before {
+  background-color: $basic_green;
+  background-clip: content-box;
 }

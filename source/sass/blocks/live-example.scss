@@ -1,9 +1,41 @@
 .live-example {
   background-color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic_white;
+    background-image: linear-gradient(to top, $dark_grey 462px, $basic_white 462px);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to top, $basic_grey 462px, $basic_white 462px);
+  }
+}
+
+.live-example__info-block {
+  @media (min-width: $desktop-width) {
+    width: 436px;
+  }
+}
+
+.live-example__slider {
+  margin: 0 -20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+  }
 }
 
 .live-example__wrapper {
   @include wrapper;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .live-example__title {
@@ -13,13 +45,43 @@
   color: $basic-black;
 
   @include font(36px, 40px);
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
+
 
 .live-example__desc {
   margin: 0;
   margin-top: 33px;
   margin-bottom: 25px;
   font-family: $arial;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 146px;
+    margin-bottom: 69px;
+  }
+}
+
+.live-example__stats {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .live-example__stats-items {
@@ -34,6 +96,15 @@
   text-align: center;
   border: 1px solid $special_grey;
   border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+  }
+}
+
+
+.live-example__stats-item:nth-child(2) {
+  margin-left: 42px;
 }
 
 .live-example__stats-value {
@@ -43,6 +114,11 @@
   padding: 15px 0;
 
   @include font(24px, 24px);
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .live-example__stats-mark {
@@ -55,22 +131,52 @@
   transform: translateX(-51%);
 
   @include font(12px, 12px);
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $basic-white;
+  }
 }
 
 .live-example__cost {
   margin: 0;
   margin-top: 34px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    margin-top: 55px;
+    justify-content: space-between;
+  }
 }
 
 .live-example__cost-mark {
   @include font(14px, 20px);
   color: $basic-black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .live-example__cost-value {
   @include font(14px, 20px);
   color: $basic-black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
