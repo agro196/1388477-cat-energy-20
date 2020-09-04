@@ -3,29 +3,29 @@
   line-height: $line-height;
 }
 
-@mixin wrapper($padding-left: 20px, $padding-right: 20px) {
-  padding-left: $padding-left;
-  padding-right: $padding-right;
+@mixin wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+
   @media (min-width: $tablet-width) {
     padding-left: 30px;
     padding-right: 30px;
   }
-  @media (min-width: $desktop-width) {
-    padding-left: 55px;
-    padding-right: 55px;
-    max-width: 1220px;
-    margin: 0 auto;
 
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
-
 
 @mixin button {
   text-transform: uppercase;
   color: $basic-white;
   background-color: $basic-green;
   padding-top: 12px;
-  padding-bottom: 10px;
+  padding-bottom: 11px;
   display: block;
   text-align: center;
 }
@@ -34,23 +34,42 @@
   text-transform: uppercase;
   color: $special_dark-grey;
   background-color: $basic_grey;
-  padding: 10px 0;
+  padding: 12px 0;
   display: block;
   text-align: center;
 }
+
 @mixin title-line {
   padding-right: 22px;
   display: inline-block;
   position: relative;
   background-color: $basic_white;
+
   &::after {
     content: "";
     position: absolute;
     top: 0;
     width: 100vw;
     height: 2px;
-    margin-top: calc(1em/2 + 2px);
+    margin-top: calc(1em / 2 + 2px);
     background-color: $basic_green;
     z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 36px;
+    padding-left: 36px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100vw;
+      height: 2px;
+      margin-top: calc(1em / 2 + 2px);
+      background-color: $basic_green;
+      z-index: -1;
+    }
   }
 }

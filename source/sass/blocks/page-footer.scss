@@ -4,6 +4,12 @@
 
 .page-footer__wrapper {
   @include wrapper;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .page-footer__logo {

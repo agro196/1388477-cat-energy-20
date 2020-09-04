@@ -1,10 +1,27 @@
+form {
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-right: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .form__wrapper {
   @include wrapper;
-  overflow: hidden;
 }
 
 .form__fieldset {
   margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
 }
 
 .form__fieldset--weight {
@@ -13,8 +30,15 @@
   padding: 20px 20px;
   margin: 0 -20px;
   margin-bottom: 27px;
-}
 
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 70px;
+    border-left: 1px solid $special_grey-4;
+    border-right: 1px solid $special_grey-4;
+    padding: 25px 24px;
+  }
+}
 
 .form__fieldset-title {
   @include font(24px, 26px);
@@ -24,11 +48,23 @@
   margin-bottom: 32px;
 
   @include title-line;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: -40px;
+    margin-right: -40px;
+  }
 }
 
 .form__fieldset-title--contacts {
   max-width: 205px;
+
+  @media (min-width: $tablet-width) {
+    max-width: none;
+  }
 }
+
 .form__fieldset-list {
   margin: 0;
   padding: 0;
@@ -37,15 +73,86 @@
 
 .form__fieldset-item + .form__fieldset-item {
   margin-top: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
+}
+
+.form__cat-weight-layout {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.form__fieldset--cat,
+.form__fieldset--weight {
+  @media (min-width: $desktop-width) {
+    width: 47%;
+  }
+}
+
+.form__fieldset--add .form__fieldset-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.form__fieldset--add .form__fieldset-item {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 45%;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 20%;
+  }
+}
+
+.form__fieldset--contacts .form__fieldset-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.form__fieldset--contacts .form__fieldset-item {
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 47%;
+  }
+}
+
+.form__submit-block {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .form__submit-button {
   @include button;
-  @include font(16px, 20px);
+  @include font(16px, 17px);
   width: 100%;
   font-family: $oswald;
   border: none;
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 282px;
+    font-size: 20px;
+    padding-top: 18px;
+    padding-bottom: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+  }
 }
 
 .form__small-text {
@@ -55,4 +162,14 @@
   color: $basic-black;
 
   @include font(14px, 16px);
+
+  @media (min-width: $tablet-width) {
+    margin-left: 61px;
+    padding-top: 16px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 81px;
+  }
 }
