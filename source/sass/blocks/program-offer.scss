@@ -6,6 +6,10 @@
   position: relative;
   overflow: hidden;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     background-image: none;
     padding-bottom: 530px;
@@ -20,6 +24,10 @@
     margin: 0 auto;
     margin-top: -73px;
     z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+     background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 }
 

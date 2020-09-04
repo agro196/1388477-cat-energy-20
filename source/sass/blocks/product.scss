@@ -1,10 +1,11 @@
 .product {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   padding: 25px 20px 25px 20px;
 
   @media (min-width: $tablet-width) {
+    flex-direction: column;
     padding: 8px 38px 40px 38px;
     background-image: linear-gradient(to top, $basic_grey 430px, $basic_white 430px, $basic_white 511px);
   }
@@ -33,6 +34,16 @@
 
 .product__title-link {
   color: $product_color;
+}
+
+.product__img {
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
 
 .product__info-block {
