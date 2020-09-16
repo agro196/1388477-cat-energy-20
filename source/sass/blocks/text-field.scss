@@ -15,7 +15,7 @@
     line-height: 30px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-right: 20px;
   }
 }
@@ -73,6 +73,6 @@
   outline: 2px solid $special_dark-grey;
 }
 
-.text-field__input:focus +.text-field__icon {
+.text-field__input:focus + .text-field__icon {
   fill: $basic_green;
 }

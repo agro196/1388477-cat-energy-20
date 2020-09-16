@@ -10,7 +10,6 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    margin-top: 82px;
     margin-top: -8px;
   }
 }
@@ -206,9 +205,8 @@
   }
 
   &:hover {
-
     &::after {
-      background-image: url("../../img/icon-right-arrow-verylong.svg");
+      background-image: url("../img/icon-right-arrow-verylong.svg");
     }
   }
 

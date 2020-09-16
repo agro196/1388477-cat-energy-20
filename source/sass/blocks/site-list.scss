@@ -57,12 +57,12 @@
 }
 
 .site-list--index {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 43px;
   }
 }
 
-.site-list--index .site-list__item-link{
+.site-list--index .site-list__item-link {
   @media (min-width: $desktop-width) {
     color: $basic_white;
   }

@@ -46,8 +46,8 @@ const sprite = () => {
   .pipe(svgstore())
   .pipe(rename("sprite.svg"))
   .pipe(gulp.dest("source/img"))
- }
- exports.sprite = sprite;
+  }
+  exports.sprite = sprite;
 
 //webp
 
@@ -68,8 +68,8 @@ const images = () => {
   imagemin.mozjpeg({progressive: true}),
   imagemin.svgo()
   ]))
- }
- exports.images = images;
+  }
+  exports.images = images;
 
 // Styles
 
