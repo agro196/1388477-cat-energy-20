@@ -33,13 +33,24 @@
       padding: 10px;
     }
   }
+
+  &:hover {
+
+    &::before {
+      border: 1px solid $special_grey-6;
+    }
+  }
 }
 
-.radio-field__input {
-  display: none;
+.radio-field__input:focus + .radio-field__label::before {
+  outline: rgb(59, 153, 252) auto 5px;
 }
 
 .radio-field__input:checked + .radio-field__label::before {
   background-color: $basic_green;
   background-clip: content-box;
+}
+
+.radio-field__input:disabled + .radio-field__label {
+  opacity: 0.3;
 }

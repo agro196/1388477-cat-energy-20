@@ -2,10 +2,27 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 0;
+  padding: 16px 0;
 }
 
 .copyright__text {
   @include font(16px, 18px);
   font-family: $arial;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 14px;
+  }
+}
+
+.copyright__logo {
+  fill: $special_grey-3;
+  margin-right: -5px;
+
+  &:hover{
+    fill: $basic_green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

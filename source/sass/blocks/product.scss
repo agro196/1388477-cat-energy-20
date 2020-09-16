@@ -46,6 +46,15 @@
   }
 }
 
+.product__img-block {
+  @media (min-width: $tablet-width) {
+    min-height: 208px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+}
+
 .product__info-block {
   flex-grow: 1;
 }

@@ -15,10 +15,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 17px;
+  }
 }
 
 .social__item {
   margin: 0 16px;
+}
+
+.social__link svg {
+
+  &:hover{
+    fill: $basic_green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__link--vkontakte svg {

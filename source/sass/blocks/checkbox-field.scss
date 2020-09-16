@@ -52,12 +52,23 @@
       left: 12px;
     }
   }
-}
 
-.checkbox-field__input {
-  display: none;
+  &:hover {
+
+    &::before {
+      border: 1px solid $special_grey-6;
+    }
+  }
 }
 
 .checkbox-field__input:checked + .checkbox-field__label::after {
   display: block;
+}
+
+.checkbox-field__input:focus + .checkbox-field__label::before {
+  outline: rgb(59, 153, 252) auto 5px;
+}
+
+.checkbox-field__input:disabled + .checkbox-field__label {
+  opacity: 0.3;
 }

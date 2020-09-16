@@ -28,6 +28,14 @@
   padding-bottom: 11px;
   display: block;
   text-align: center;
+
+  &:hover {
+    background-color: $basic_green-2;
+  }
+
+  &:active {
+    color: rgba($color: $basic-white, $alpha: 0.3);
+  }
 }
 
 @mixin button--show-all {
@@ -37,6 +45,14 @@
   padding: 12px 0;
   display: block;
   text-align: center;
+
+  &:hover {
+    background-color: $special_grey-2;
+  }
+
+  &:active {
+    color: rgba($color: $special_dark-grey, $alpha: 0.3);
+  }
 }
 
 @mixin title-line {

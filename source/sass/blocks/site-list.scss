@@ -5,6 +5,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    padding-top: 19px;
   }
 }
 
@@ -47,7 +48,21 @@
   }
 }
 
-.site-list--index .site-list__item-link {
+.site-list__item-link[href] {
+  @media (min-width: $tablet-width) {
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+.site-list--index {
+  @media(min-width: $tablet-width) {
+    padding-top: 43px;
+  }
+}
+
+.site-list--index .site-list__item-link{
   @media (min-width: $desktop-width) {
     color: $basic_white;
   }
